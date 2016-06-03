@@ -9,5 +9,9 @@ app.get('/', function (req, res) {
 });
 
 io.on('connection', function (socket) {
-	console.log('Address: ' + socket.request.socket.remoteAddress);
+	
+	socket.on('logon', function (data) {
+		io.sockets.emit('botLogon', data);
+	});
+
 });

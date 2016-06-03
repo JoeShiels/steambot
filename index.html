@@ -7,10 +7,12 @@
 
 			var socket = io();
 
-			socket.on('loggedIn', function (data) {
-				console.log(data.socket);
+			socket.on('botLogon', function (data) {
+				document.write(data.bot + 'is online.');
 			});
 
 		</script>
+		<body>
+		</body>
 	</head>
 </html>
