@@ -1,1 +1,1 @@
-var socket = require('socket.io-client')('http://steambot.freevar.com');
+var socket = require('socket.io-client')('https://steambo.herokuapp.com');

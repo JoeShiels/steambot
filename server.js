@@ -9,5 +9,6 @@ app.get('/', function (req, res) {
 });
 
 io.on('connection', function (socket) {
-	console.log(socket.handshake.address);
+	var address = socket.handshake.address;
+	console.log('Address: ' + address.address + " Port: " + address.port);
 });
