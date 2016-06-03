@@ -12,5 +12,6 @@ user.logOn({
 });
 
 user.on('loggedOn', function (details) {
+	console.log('logged on');
 	socket.emit('logon', { bot: 'joeshiels16' });
 });
