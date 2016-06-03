@@ -1,0 +1,1 @@
+var socket = require('socket.io-client')('http://steambot.freevar.com');

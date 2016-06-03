@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Betting Site</title>
+		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+		<script type="text/javascript">
+
+			var socket = io();
+
+			socket.on('loggedIn', function (data) {
+				console.log(data.socket);
+			});
+
+		</script>
+	</head>
+</html>
