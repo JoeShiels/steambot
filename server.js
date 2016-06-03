@@ -9,5 +9,5 @@ app.get('/', function (req, res) {
 });
 
 io.on('connection', function (socket) {
-	console.log('Address: ' + socket.handshake.headers['X-FORWARDED-FOR']);
+	console.log('Address: ksdfskdj');
 });
