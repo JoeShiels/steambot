@@ -9,5 +9,5 @@ app.get('/', function (req, res) {
 });
 
 io.on('connection', function (socket) {
-	console.log('Address: ksdfskdj');
+	console.log('Address: ' + socket.request.socket.remoteAddress);
 });
